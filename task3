@@ -1,0 +1,15 @@
+const bonusBalance = 500;
+const purchasesThisMonth = 2;
+const standardPercent = 10;
+const increasedPercent = 20;
+const frequentPurchaseBonus = 5;
+let finalPercent = standardPercent;
+if (bonusBalance > 5000) {
+    finalPercent = increasedPercent;
+} else {
+    finalPercent = standardPercent;
+}
+if (purchasesThisMonth > 1) {
+    finalPercent = finalPercent + frequentPurchaseBonus;
+}
+console.log('Процент от покупки: ' + finalPercent);
