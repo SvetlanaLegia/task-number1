@@ -1,0 +1,7 @@
+const user = 'netologist';
+const orderOwner = 'leo_tolstoy';
+if (user === 'admin' || user === orderOwner) {
+    console.log('Редактирование разрешено');
+} else {
+    console.log('Заказ нельзя редактировать');
+}
